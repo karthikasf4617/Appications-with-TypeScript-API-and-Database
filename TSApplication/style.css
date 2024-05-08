@@ -1,0 +1,133 @@
+*
+{
+    font-family: calibri;
+    font-size: 19;
+}
+body
+{
+    background-image: linear-gradient(to right,rgb(156, 149, 157),rgb(20, 49, 72));
+}
+#home
+{
+   text-align: center;
+}
+#btn1
+{
+    background-color: rgb(20, 49, 72);
+    color: white;
+    width:20%;
+    height:6%;
+    cursor: pointer;
+    
+   
+}
+#btn2
+{
+    background-color: rgb(20, 49, 72);
+    color: white;
+    width:20%;
+    height:6%;
+}
+#signup
+{
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 3%;
+    border: solid;
+    border-color: rgb(113, 111, 111);
+    box-shadow: 4px 4px 4px 4px gray;
+    width: 30%;
+    height: 50%;
+    display: none;
+}
+#orderhistory
+{
+    display: none;
+}
+#signin
+{
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 3%;
+    border: solid;
+    border-color: rgb(113, 111, 111);
+    box-shadow: 4px 4px 4px 4px gray;
+    width: 30%;
+    height: 50%;
+    display: none;
+}
+#medicineInfo
+{
+display: none;
+}
+#menubar
+{
+    display: none;
+}
+#purchase
+{
+    display: none;
+}
+input
+{
+    width: 85%;
+    background-color: rgb(192, 182, 182);
+    border-color: rgb(192, 182, 182);
+}
+#btn3
+{
+    width: 40%;
+    background-color:rgb(20, 49, 72);
+    color: white;
+}
+#btn4
+{
+    width: 40%;
+    background-color:rgb(20, 49, 72);
+    color: white;
+}
+#btn5
+{
+    width:15%;
+    height: 9%;
+    background-color:rgb(20, 49, 72);
+    color: white;
+}
+.menubar button
+{
+    width: 16%;
+    background-color:rgb(20, 49, 72);
+    color: white;
+}
+#recharge
+{
+    display: none;
+}
+#topup,#Addition,#edit
+{
+    display: none;
+}
+#showbalance,#cancel,#button1
+{
+    display: none;
+}
+
+#history
+{
+    display: none;
+}
+#purchasedetails
+{
+    display: none;
+    width: 30%;
+}
+#Addition,#edit
+{
+    border: 2px;
+    border-color: gray;
+    border-style: solid;
+}
+#medname1,#medcount1,#medprice1,#expirydate1
+{
+    width: 60%;
+}

@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div id="home">
+        <button onclick="signup()" id="btn1">Signup</button>
+        <button onclick="signin()" id="btn2">SignIn</button>
+        </div>
+        <div id="signup">
+            Email<br><input type="email" id="newuserid" class="email" onkeyup="checkUserMail('email')"><label id="useremailmessage"></label><br><br>
+            Password<br><input type="password" id="password" name="password" onkeyup="checkUserpass('password')"><label id="passmessage"></label><br><br>
+            confirm password<br><input type="password" id="confirmpass" name="confirmpass" onkeyup="checkUserconfirmpass('password','confirmpass')"><label id="pass2message"></label><br><br>
+            Phone Number<br><input type="text" id="phoneno" name="phoneno" onkeyup="checkUserPhone('phoneno')"><label id="phonemessage"></label><br><br>
+            <button id="btn3" onclick="submit()">Submit</button>
+        </div>
+        <div id="signin">
+            <label for="email">Email</label><br><input type="email" id="existinguserid" name="email">
+            <label >PassWord</label><br><input type="text" name="signInpassword" id="signInpassword">
+            <button id="btn4" onclick="signinbtn()">Sign In</button>
+            <label id="avalibleuser"></label>
+        </div>
+        <div id="menubar">
+            <h1>Welcome </h1>
+            <button  onclick="medicinedata()">Medicine Data</button>
+            <button onclick="purchase()">Purchase</button>
+            <button onclick="cancel()" >Cancel</button>
+            <button onclick="topup()">Topup</button>
+            <button onclick="showbalance()">Show Balance</button>
+            <button onclick="history1()">Order History</button>
+        </div>
+        <div id="button1"><button onclick="add1()">Add</button></div>
+        <div id="Addition">
+            <label>MedicineName</label><input type="text" id="medname" name="medname"><br>
+            <label>MedicineCount</label><input type="number" id="medcount" name="number"><br>
+            <label>MedicinePrice</label><input type="number" id="medprice" name="medprice"><br>
+            <label>Expiry Date</label><input type="date" id="expirydate" number="expirydate"><br>
+            <button onclick="add2()">Submit</button>
+        </div>
+        <div id="Edit">
+            <label>MedicineName</label><input type="text" id="medname1" name="medname"><br>
+            <label>MedicineCount</label><input type="number" id="medcount1" name="number"><br>
+            <label>MedicinePrice</label><input type="number" id="medprice1" name="medprice"><br>
+            <label>Expiry Date</label><input type="date" id="expirydate1" number="expirydate"><br>
+            <button onclick="edit2()">Submit</button>
+        </div>
+        <!-- <div id="edit">
+            <label>MedicineName</label><input type="text" id="medname1" name="medname"><br>
+            <label>MedicineCount</label><input type="number" id="medcount1" name="number"><br>
+            <label>MedicinePrice</label><input type="number" id="medprice1" name="medprice"><br>
+            <label>Expiry Date</label><input type="date" id="expirydate1" number="expirydate"><br>
+            <button onclick="edit1()">Edit</button>
+        </div> -->
+        <div id="medicineInfo">
+            <h3>Medicine Data</h3>
+            <table border="3" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Medicine Price</th>
+                        <th>Medicine Count</th>
+                        <th>Expiry Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                
+                
+            </table>
+        </div>
+        <div id="purchase">
+            <h3>Purchase</h3>
+            <table border="3" id="dataTable1">
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Medicine Price</th>
+                        <th>Medicine Count</th>
+                        <th>Expiry Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                
+                
+            </table>
+            <div id="purchasedetails">
+                <label>Enter Required Count</label><input type="number" id="requiredcount" name="requiredcount">
+                <button onclick="buy()">Buy</button>
+            </div>
+        </div>
+        <div id="topup">
+            <label id="currentbalance">Current Balance</label><br>
+            <label>Enter Amount to recharge</label>
+            <input type="number" name="rechargeamount" id="rechargeamount">
+            <button onclick="recharge()">Recharge</button>
+        </div>
+        <div ><label for="" id="recharge"></label></div>
+        <div id="cancel" >
+            <h3>orderhistory</h3>
+            <table id="orderhistory" border="3">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Medicine Id</th>
+                        <th>Medicine Count</th>
+                        <th>Medicine Price</th>
+                        <th>Order Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+               
+            </table>
+        </div>
+       
+        <div id="history" >
+            <h3>Your History Details</h3>
+            <table id="historydisplay" border="3">
+                <thead>
+                    <tr>
+                        <th>MedicineId</th>
+                        <th>UserId</th>
+                        <th>MedicineName</th>
+                        <th>MedicineCount</th>
+                        <th>Orderstatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="showbalance">
+            <label id="balance">Your Balance</label>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
